@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedgehog</title>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Fonts -->
+    <!-- Cormorant Infant Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Raleway Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class=" header__container flex">
+            <a href="#" class="header__logo">
+               <picture>
+                <source media="(max-width:635px)" srcset="img/logo-small.png">
+                <img src="img/Logo.png" alt="logo">
+               </picture>
+            </a>
+
+            <a href="#" id="burger" class="header__burger">
+                <img src="img/burger.svg" alt="">
+            </a>
+            <nav class="header__nav" id="menu">
+                <a href="#" id="close-menu" class="close-menu">
+                    <img src="img/burger-closr.svg" alt="">
+                </a>
+                <ul class="header__nav-list list-reset flex">
+                    <li class="header__nav-list-item">
+                        <a href="#" class="header__nav-list-item-link">
+                            каталог
+                        </a>
+                        <div class="header__nav-list-dropdown dropdown" data-target="one">
+                            <div class="dropdown-wrap" data-simplebar>
+                                <ul class="header__nav-dropdown-list list-reset">
+                                    <li class="header__nav-dropdown-item">
+                                        <a class="header__nav-dropdown-link" href="#">
+                                            ёжики
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-dropdown-item">
+                                        <a class="header__nav-dropdown-link" href="#">
+                                            питание
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-dropdown-item">
+                                        <a class="header__nav-dropdown-link" href="#">
+                                            переноски
+                                        </a>
+                                    </li>
+                                    <li class="header__nav-dropdown-item">
+                                        <a class="header__nav-dropdown-link" href="#">
+                                            лекарства
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a href="#" class="header__nav-list-item-link">
+                            о&nbsp;нас
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a href="#" class="header__nav-list-item-link">
+                            контакты
+                        </a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a href="#" class="header__nav-list-item-link">
+                            галерея
+                        </a>
+                    </li>
+                </ul>
+                <a href="tel:+79655698998" class="header__contact-link-nav raleway">
+                    +7 (965) 569-89-98
+                </a>
+            </nav>
+            <a href="tel:+79655698998" class="header__contact-link raleway">
+                +7 (965) 569-89-98
+            </a>
+            <a href="#" class="header__basket-link">
+                <svg width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.6435 33.7719C14.1216 33.7719 15.3198 32.6461 15.3198 31.2574C15.3198 29.8686 14.1216 28.7429 12.6435 28.7429C11.1654 28.7429 9.96716 29.8686 9.96716 31.2574C9.96716 32.6461 11.1654 33.7719 12.6435 33.7719Z"
+                        fill="#195557" />
+                    <path
+                        d="M28.9039 33.7719C30.382 33.7719 31.5802 32.6461 31.5802 31.2574C31.5802 29.8686 30.382 28.7429 28.9039 28.7429C27.4258 28.7429 26.2275 29.8686 26.2275 31.2574C26.2275 32.6461 27.4258 33.7719 28.9039 33.7719Z"
+                        fill="#195557" />
+                    <path
+                        d="M36.1359 4.01107C36.0253 3.88287 35.8857 3.7793 35.7274 3.7078C35.569 3.63631 35.3957 3.59866 35.22 3.59757H10.4548L11.228 5.8327H33.6618L30.4859 19.2435H12.6435L7.2075 3.07231C7.1487 2.90072 7.04659 2.74504 6.90989 2.61854C6.77319 2.49205 6.60594 2.39851 6.42243 2.34589L1.54551 0.937757C1.39555 0.894462 1.23799 0.879342 1.08181 0.89326C0.925634 0.907177 0.773903 0.94986 0.635282 1.01887C0.355326 1.15824 0.145765 1.3964 0.0527001 1.68094C-0.0403644 1.96548 -0.00930887 2.2731 0.139035 2.53613C0.287378 2.79916 0.540859 2.99605 0.843713 3.08349L5.11399 4.31281L10.5738 20.5175L8.62299 22.0151L8.46836 22.1604C7.98582 22.6828 7.71232 23.347 7.69495 24.0385C7.67758 24.7301 7.91743 25.4057 8.3732 25.9489C8.6974 26.3193 9.10938 26.6133 9.57618 26.8074C10.043 27.0015 10.5516 27.0902 11.0615 27.0665H30.9141C31.2295 27.0665 31.5321 26.9487 31.7552 26.7392C31.9782 26.5296 32.1036 26.2453 32.1036 25.9489C32.1036 25.6525 31.9782 25.3683 31.7552 25.1587C31.5321 24.9491 31.2295 24.8314 30.9141 24.8314H10.8711C10.7342 24.827 10.6007 24.7894 10.4837 24.7224C10.3666 24.6554 10.27 24.5612 10.203 24.4489C10.136 24.3365 10.101 24.2098 10.1014 24.0811C10.1017 23.9523 10.1374 23.8258 10.205 23.7138L13.0717 21.4786H31.4374C31.7124 21.485 31.9812 21.4016 32.1981 21.2426C32.415 21.0837 32.5665 20.859 32.6269 20.6069L36.3976 4.961C36.4338 4.79439 36.429 4.62222 36.3837 4.45761C36.3383 4.29299 36.2536 4.14027 36.1359 4.01107Z"
+                        fill="#195557" />
+                </svg>
+
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <setion class="section hero">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <div class="hero__content-vector">
+                        <picture>
+                            <source media="(max-width:678px)" srcset="img/name.svg">
+                            <img src="img/Vector.svg" alt="">
+                        </picture>
+                    </div>
+                    <h1 class="hero__content-title">
+                        тоже любят молоко
+                    </h1>
+                    <p class="hero__content-descr">
+                        Заведите себе ёжика. Он&nbsp;всегда выслушает, не&nbsp;будет мяукать в&nbsp;5&nbsp;утра
+                        и&nbsp;царапать вашу мебель.
+                    </p>
+                    <button class="hero__content-btn btn raleway">
+                        Купить ёжика
+                    </button>
+                </div>
+            </div>
+        </setion>
+        <section class="section info">
+            <div class="info__container container">
+                <img src="img/info-img1.png" alt="" class="info-bg1">
+                <ul class="info__list list-reset flex">
+                    <li class="info__list-item icon1">
+                        <div class="info__item-content">
+                            <p class="info__item-content-title">
+                                разведение ежиков
+                            </p>
+                            <p class="info__item-content-descr raleway">
+                                Собственная ферма, уход и&nbsp;содержание
+                            </p>
+                        </div>
+                    </li>
+                    <li class="info__list-item icon2 item2">
+                        <div class="info__item-content">
+                            <p class="info__item-content-title">
+                                здоровье
+                            </p>
+                            <p class="info__item-content-descr raleway">
+                                Всегда прививаем и&nbsp;вовремя обследуем ваших будущих питомцев
+                            </p>
+                        </div>
+                    </li>
+                    <li class="info__list-item icon3">
+                        <div class="info__item-content">
+                            <p class="info__item-content-title">
+                                любовь и&nbsp;забота
+                            </p>
+                            <p class="info__item-content-descr raleway">
+                                Каждому ежику мы&nbsp;дарим много внимания
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+               <picture>
+                <source media="(max-width:680px )" srcset="img/info-img2-small.png">
+                <img src="img/info-img2.png" alt="" class="info-bg2">
+               </picture>
+            </div>
+        </section>
+        <section class="section catalog">
+            <div class="catalog__container container">
+                <button class="prev-btn prev" aria-label="К предыдущему слайду"></button>
+                <div class="catalog__swiper swiper" id="swiper">
+                    <div class="catalog__swiper-wrapper swiper-wrapper flex">
+                        <div class="catalog__swiper-slide swiper-slide slide1">
+                            <span class="span-discount raleway"> -50&nbsp;%</span>
+                            <div class="tooltip-list flex">
+                                <span class="tooltip"></span>
+                            <div class="tooltip-content flex">
+                                <p class="tooltip2 raleway"> 
+                                    Привит 
+                                </p>
+                                <p class="tooltip3 raleway"> 
+                                    1235 
+                                </p>
+                            </div>
+                            </div>
+                            <div class="catalog__slide-content">
+                                <h2 class="catalog__slide-name">
+                                    Ежик &laquo;Евгений&raquo;
+                                </h2>
+                                <p class="catalog__slide-descr raleway">
+                                    Очень любит сладости. Маленький сладкоежка=) Мы&nbsp;называем его так между собой.
+                                    Ручной, любит внимаение
+                                </p>
+                            </div>
+                            <div class="catalog__slide-price">
+                                <p class="catalog__slide-oldprice">
+                                    3&nbsp;000&nbsp;₽
+                                </p>
+                                <p class="catalog__slide-newprice">
+                                    1&nbsp;500&nbsp;₽
+                                </p>
+                            </div>
+                            <button class="catalog__slide-btn btn"></button>
+
+                        </div>
+                        <div class="catalog__swiper-slide swiper-slide slide2">
+                            <span class="span-discount raleway"> -50&nbsp;%</span>
+                            <div class="tooltip-list flex">
+                                <span class="tooltip"></span>
+                           <div class="tooltip-content flex">
+                            <p class="tooltip2 raleway"> 
+                                Привит 
+                            </p>
+                            <p class="tooltip3 raleway"> 
+                                1235 
+                            </p>
+                           </div>
+                            </div>
+                            <div class="catalog__slide-content">
+                                <h2 class="catalog__slide-name">
+                                    Ежик &laquo;Максим&raquo;
+                                </h2>
+                                <p class="catalog__slide-descr raleway">
+                                    Немного игривый и&nbsp;задорный характер этого друга никого не&nbsp;оставит
+                                    равнодушным!
+                                </p>
+                            </div>
+                            <div class="catalog__slide-price">
+                                <p class="catalog__slide-oldprice">
+                                    5&nbsp;000&nbsp;₽
+                                </p>
+                                <p class="catalog__slide-newprice">
+                                    2&nbsp;500&nbsp;₽
+                                </p>
+                            </div>
+                            <button class="catalog__slide-btn btn"></button>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <button class="next-btn next" aria-label="К следующему слайду"></button>
+            </div>
+        </section>
+        <section class="section call">
+            <div class="container call__container">
+
+                <form action="" class="call__form">
+                    <h2 class="call__form-title">
+                        Заполните заявку и&nbsp;мы&nbsp;забронируем для Вас нового друга
+                    </h2>
+                    <div class="call__form-radio-list flex">
+                        <div class="call__form-radio-btns flex">
+                            <div class="form__radio-btn">
+                                <input id="radio-btn1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-btn1" class="form-span">хочу ёжика для себя</label>
+                            </div>
+                            <div class="form__radio-btn">
+                                <input id="radio-btn2" type="radio" name="radio" value="2">
+                                <label for="radio-btn2" class="form-span">хочу ёжика для детей</label>
+                            </div>
+                            <div class="form__radio-btn">
+                                <input id="radio-btn3" type="radio" name="radio" value="3">
+                                <label for="radio-btn3" class="form-span">хочу ёжика для разведения</label>
+                            </div>
+
+                        </div>
+
+                        <div class="call__form-radio">
+                            <div class="form-radio">
+                                <input id="radio-1" type="radio" name="r" value="r1" checked>
+                                <label for="radio-1" class="form-span">Мне нужен 1-2 ёжика</label>
+                            </div>
+                            <div class="form-radio">
+                                <input id="radio-2" type="radio" name="r" value="r2">
+                                <label for="radio-2" class="form-span">Мне нужны 3&nbsp;и&nbsp;более ёжиков</label>
+                            </div>
+                            <div class="form-radio">
+                                <input id="radio-3" type="radio" name="r" value="r3">
+                                <label for="radio-3" class="form-span">Мне нужны 3-4 ёжика</label>
+                            </div>
+                            <div class="form-radio">
+                                <input id="radio-4" type="radio" name="r" value="r4">
+                                <label for="radio-4" class="form-span">Пока присматриваюсь</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="call__form-fields flex">
+                        <div class="form-field field">
+                            <input class="input-form raleway " name="name" type="text" placeholder="Ваше имя"
+                                data-validate-field="name" data-msg="Введите имя" autocomplete="off" id="name">
+                        </div>
+                        <div class="form-field field">
+                            <input class="input-form raleway" name="phone" type="tel" placeholder="Ваш телефон"
+                                data-validate-field="phone" data-msg="Введите телефон" autocomplete="off" id="phone">
+                        </div>
+                        <div class="form-field">
+                            <input class="input-form raleway" name="email" type="email" placeholder="Ваш e-mail"
+                                data-validate-field="email" data-msg="Введите e-mail" autocomplete="off" id="email">
+                        </div>
+
+                        <textarea class="form-comment raleway" placeholder="Комментарий к заявке" cols="30" rows="5">
+
+                        </textarea>
+                    </div>
+                    <button class="call__form-btn btn raleway" type="submit">
+                        Купить ёжика
+                    </button>
+
+
+                </form>
+            </div>
+        </section>
+        <section class="section stock">
+            <div class="container stock__container">
+                <div class="stock__content">
+                    <p class="stock__subtitle">У&nbsp;наc&nbsp;осталось еще:<a class="stock-link"> 25&nbsp;ёжиков </a>
+                    </p>
+                    <p class="stock__descr raleway">
+                        Торопитесь! Акция действует до&nbsp;26. 02. 2023
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class=" footer__container flex">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img class="footer__logo" src="img/footer-logo.png" alt="logo">
+                </a>
+                <div class="footer__content-text">
+                    <p class="footer__content-descr1 raleway">Все права защищены.</p>
+                <p class="footer__content-descr raleway">
+                    Указанная стоимость товаров и&nbsp;условия их&nbsp;приобретения действительны на&nbsp;текущую дату.
+                </p>
+                </div>
+            </div>
+
+            <ul class="footer__nav-list list-reset flex">
+                <li class="footer__nav-list-item">
+                    <a href="#" class="footer__nav-list-item-link">
+                        Каталог
+                    </a>
+                </li>
+                <li class="footer__nav-list-item">
+                    <a href="#" class="footer__nav-list-item-link">
+                        о&nbsp;нас
+                    </a>
+                </li>
+                <li class="footer__nav-list-item">
+                    <a href="#" class="footer__nav-list-item-link">
+                        контакты
+                    </a>
+                </li>
+                <li class="footer__nav-list-item">
+                    <a href="#" class="footer__nav-list-item-link">
+                        галерея
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer__nav-soclist list-reset flex">
+                <li class="footer__nav-soclist-item">
+                    <a href="#" class="footer__nav-soclist-item-link instagram">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 5C11.6667 5 5 11.6667 5 20C5 28.3333 11.6667 35 20 35C28.3333 35 35 28.3333 35 20C35 11.6667 28.3333 5 20 5ZM20 16.6667C21.8333 16.6667 23.3333 18.1667 23.3333 20C23.3333 21.8333 21.8333 23.3333 20 23.3333C18.1667 23.3333 16.6667 21.8333 16.6667 20C16.6667 18.1667 18.1667 16.6667 20 16.6667ZM24.6667 13.3333C24.6667 12.1667 25.6667 11.3333 26.6667 11.3333C27.6667 11.3333 28.6667 12.3333 28.6667 13.3333C28.6667 14.3333 27.8333 15.3333 26.6667 15.3333C25.5 15.3333 24.6667 14.5 24.6667 13.3333ZM20 31.6667C13.5 31.6667 8.33333 26.5 8.33333 20H13.3333C13.3333 23.6667 16.3333 26.6667 20 26.6667C23.6667 26.6667 26.6667 23.6667 26.6667 20H31.6667C31.6667 26.5 26.5 31.6667 20 31.6667Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                </li>
+                <li class="footer__nav-soclist-item">
+                    <a href="#" class="footer__nav-soclist-item-link facebook">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M30.59 9.37333C27.6733 6.47167 24.11 5 20 5C15.8517 5 12.2783 6.47333 9.37833 9.375C6.47333 12.2767 5 15.8533 5 20C5 24.1083 6.47167 27.6717 9.37333 30.59C12.275 33.5167 15.85 35 20 35C24.1117 35 27.675 33.5167 30.5933 30.595C33.5183 27.6733 35 24.1083 35 20C35 15.8533 33.5167 12.2767 30.59 9.37333ZM28.2367 28.2383C26.3417 30.1367 24.1767 31.2183 21.6667 31.5467V23.3333H25V20H21.6667V17.6667C21.6667 17.5352 21.6926 17.405 21.7429 17.2836C21.7933 17.1622 21.8671 17.0518 21.9601 16.959C22.0532 16.8661 22.1636 16.7925 22.2851 16.7423C22.4067 16.6922 22.5369 16.6664 22.6683 16.6667H25V13.3333H22.6717C21.435 13.3333 20.4033 13.7883 19.5767 14.7033C18.75 15.615 18.3333 16.7283 18.3333 18.05V20H15V23.3333H18.3333V31.55C15.7967 31.225 13.6233 30.1417 11.7383 28.2433C9.44667 25.9367 8.33333 23.24 8.33333 20C8.33333 16.7233 9.445 14.02 11.7367 11.7333C14.02 9.445 16.7233 8.33333 20 8.33333C23.2417 8.33333 25.9367 9.44667 28.2417 11.7383C30.5467 14.025 31.6667 16.7283 31.6667 20C31.6667 23.235 30.545 25.9317 28.2367 28.2383Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                </li>
+                <li class="footer__nav-soclist-item">
+                    <a href="#" class="footer__nav-soclist-item-link twiter">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.465 17.1383C26.0617 16.77 26.46 16.27 26.6533 15.6317C26.1067 15.9276 25.52 16.1426 24.9117 16.27C24.6629 15.9964 24.3583 15.7793 24.0184 15.6335C23.6786 15.4877 23.3114 15.4166 22.9417 15.425C22.1683 15.425 21.5167 15.6967 20.9833 16.2233C20.7264 16.474 20.5232 16.7745 20.3862 17.1063C20.2493 17.4381 20.1814 17.7944 20.1867 18.1533C20.1867 18.3817 20.215 18.5867 20.2733 18.76C17.9933 18.68 16.1083 17.7367 14.6217 15.9167C14.3778 16.3311 14.2473 16.8025 14.2433 17.2833C14.2433 18.2467 14.65 19.01 15.46 19.5717C15.0344 19.5429 14.6197 19.4242 14.2433 19.2233C14.2433 19.9117 14.445 20.4867 14.8517 20.9933C15.2567 21.4933 15.78 21.8133 16.4167 21.9483C16.1797 22.0083 15.9361 22.038 15.6917 22.0367C15.5248 22.0462 15.3577 22.0253 15.1983 21.975C15.3717 22.5367 15.6917 22.99 16.155 23.3383C16.6167 23.6883 17.15 23.8717 17.75 23.8883C16.787 24.654 15.5885 25.0627 14.3583 25.045C14.045 25.045 13.825 25.0417 13.6917 25.0167C14.9411 25.8293 16.4029 26.2544 17.8933 26.2383C19.4783 26.2383 20.88 25.8367 22.0967 25.0333C23.3133 24.235 24.215 23.25 24.7917 22.0883C25.3627 20.9659 25.6602 19.7243 25.66 18.465V18.1167C26.22 17.695 26.675 17.22 27.0233 16.6933C26.5275 16.9144 26.0028 17.0643 25.465 17.1383ZM20 35C15.85 35 12.275 33.5167 9.37333 30.59C6.47167 27.6717 5 24.1083 5 20C5 15.8533 6.47333 12.2767 9.37833 9.375C12.2783 6.47333 15.8517 5 20 5C24.11 5 27.6733 6.47167 30.59 9.37333C33.5167 12.2767 35 15.8533 35 20C35 24.1083 33.5183 27.6733 30.5933 30.595C27.675 33.5167 24.1117 35 20 35ZM20 8.33333C16.7233 8.33333 14.02 9.445 11.7367 11.7333C9.445 14.02 8.33333 16.7233 8.33333 20C8.33333 23.24 9.44667 25.9367 11.7383 28.2417C14.025 30.5467 16.7267 31.6667 20 31.6667C23.2383 31.6667 25.9333 30.545 28.2367 28.2383C30.545 25.9317 31.6667 23.235 31.6667 20C31.6667 16.7283 30.5467 14.025 28.2417 11.7383C25.9367 9.44667 23.2417 8.33333 20 8.33333Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                </li>
+            </ul>
+            <a class="footer__nav-contact raleway" href="tel:0079655698998">+7 (965) 569-89-98</a>
+        </div>
+
+
+    </footer>
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
